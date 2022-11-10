@@ -1,0 +1,23 @@
+//Задача 21. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве
+
+
+
+
+
+int Num (string message)
+{
+    Console.Write (message);
+    return Convert.ToInt32 (Console.ReadLine ());
+}
+
+Console.WriteLine ("Введите координаты точки А");
+double x1 = Num ($"x1 = ");
+double y1 = Num ($"y1 = ");
+double z1 = Num ($"z1 = ");
+
+Console.WriteLine ("Введите координаты точки В");
+double x2 = Num ($"x2 = ");
+double y2 = Num ($"y2 = ");
+double z2 = Num ($"z2 = ");
+
+Console.WriteLine ($"Расстояние между точками A и В = {Math.Sqrt (Math.Pow (x1-x2, 2) +  Math.Pow(y1-y2, 2) + Math.Pow(z1-z2, 2))}");
